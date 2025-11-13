@@ -1,8 +1,13 @@
 <script setup lang="ts">
 import HelloWorld from './components/HelloWorld.vue'
+import Map from './components/Map.vue'
+import Card from './components/Card.vue'
 </script>
 
 <template>
+  <h1>Tommattih.io</h1>
+  <Card />
+  <Map />
   <div>
     <a href="https://vite.dev" target="_blank">
       <img src="/vite.svg" class="logo" alt="Vite logo" />
@@ -15,6 +20,13 @@ import HelloWorld from './components/HelloWorld.vue'
 </template>
 
 <style scoped>
+
+h1 {
+  margin: .5rem .5rem;
+  color: white;
+  font-size: 2.5rem;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;

@@ -73,3 +73,19 @@ src/
 This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
 
 Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+
+Test colors
+Horizonte frio	Azul profundo	
+#0b132b	Fundo base, seções neutras
+Azul médio	
+#1c2541	Navegação e títulos secundários	
+Lilás quente	
+#3a506b	Divisores, sombras suaves	
+Rosa âmbar	
+#5bc0be	Hover, ícones, luz difusa	
+Dourado suave	
+#f2c14e	Destaques, bordas vivas	
+Laranja queimado	
+#f78154	Elementos de ação	
+Violeta escuro	
+#53354a	Encerramento (footer, mundos distantes)	
