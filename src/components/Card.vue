@@ -182,11 +182,12 @@
  position: absolute;
  top: 0.25rem;
  left: 0;
+ z-index: 5;
  width: 100%;
- height: 72%;
- clip-path: polygon(5% 5%, 20% 5%, 25% 15%, 75% 15%, 80% 5%, 95% 5%, 95% 75%, 85% 75%, 75% 85%, 30% 85%, 20% 75%, 5% 75%);
+ height: 72.5%;
+ clip-path: polygon(5% 3%, 20% 5%, 25% 15%, 75% 15%, 80% 5%, 95% 3%, 94% 75%, 83% 75%, 75% 85%, 30% 85%, 21% 75%, 6% 75%);
 }
- 
+
 .card-img-container img {
   width: 100%;
   height: 100%;
@@ -211,7 +212,7 @@
   left: 2.2rem;
   z-index: -1;
   clip-path: polygon(0 0, 100% 0, 90% 15%, 10% 15%);
-  border-top: double 4px #2847d3;
+  border-top: solid 4px #2847d3;
 }
 .card-name h2 {
   display: inline-block;
@@ -226,9 +227,9 @@
   text-align: start;
   font-size: .6rem;
   height: 5.9rem;
-  width: 95%;
+  width: 100%;
   right: 0.25rem;
-  color: rgb(3, 19, 3);
+  color: #222;
   font-weight: 600;
   padding: 0 3rem 1.25rem 1.25rem;
 }
@@ -236,17 +237,16 @@
 .card-description::before {
   content: '';
   position: absolute;
-  left: .75rem;
-  right: 0.75rem;
-  top: -.58rem;
-  bottom: .5rem;
   z-index: -1;
-  background: #dec1b5;
+  left: .75rem;
+  right: 0.7rem;
+  top: -.58rem;
+  bottom: 0.5rem;
   opacity: 0.75;
-  border-bottom: solid 3px #4b89a5;/* var*/
+  background: #dec1b5; /*var*/
 }
-
-.card-values {
+  
+  .card-values {
   position: absolute;
   inset: 0;
   z-index: 4;
@@ -254,17 +254,18 @@
 }
 .card-number {
   position: absolute;
-  right: 7.75rem;
-  left: 0.4rem;
-  bottom: 6.35rem;
+  left: 0.5rem;
+  right: 7.6rem;
+  bottom: 6.25rem;
   height: 1.65rem;
   display: flex;
   justify-content: start;
   align-items: center;
   font-size: .75rem;
   font-weight: 800;
-  clip-path: polygon(0 0, 60% 0, 100% 100%, 0% 100%);
-  border-top: double 2px #2847d3;
+  clip-path: polygon(0 0, 50% 0, 90% 90%, 0% 90%);
+  border-top: double 4px #4b8aa6;
+  border-left: solid 4px #dec1b5;
 }
 /* NUMBER BACKGROUND */
 .card-number::before {
@@ -275,7 +276,7 @@
   background-color: #4b8aa6;
   opacity: 0.8;
   z-index: -1;
-  border-left: double 2px #2847d3;/* var*/
+  /* border-left: solid 4px #2847d3;var */
 }
 .card-number span {
   padding: .5rem .5rem;
@@ -283,24 +284,26 @@
 
 .card-stacks {
   position: absolute;
-  right: .45rem;
-  bottom: .45rem;
-  left: 3.75rem;
-  height: 7.5rem;
-  clip-path: polygon(80% 0, 100% 0, 100% 100%, 75% 100%, 65% 15%);
-  border-right: solid 2px #2847d3;
+  right: .5rem;
+  bottom: .5rem;
+  left: 4.75rem;
+  top: 9.85rem;
+  clip-path: polygon(79% 0, 100% 0, 100% 100%, 75% 100%, 60% 20%);
 }
 .card-stacks::before {
   content: '';
   position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: #4b8aa6;
+  right: -.05rem;
+  left: 2rem;
+  height: 95%;
   opacity: 0.9;
   z-index: -1;
-  border: double 2px #2847d3;/* var*/
+  background-color: #4b8aa6;
+  border: solid 4px #2847d3;
+  border-bottom: solid 2px #dec1b5;
+  border-top: double 4px #dec1b5;/* var*/
 }
-.card-stacks ul {
+  .card-stacks ul {
   list-style: none;
   text-align: end;
   font-size: .8rem;
@@ -310,8 +313,7 @@
 .card-frame{
   content: '';
   position: absolute;
-  inset: .5rem .25rem .4rem;
-  border: double 4px #2744cc;
-  border-radius: .2rem;
+  inset: .25rem 4px .2rem;
+  border: dashed 1px #dec1b4;
 }
 </style>
