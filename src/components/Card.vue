@@ -183,7 +183,7 @@
  top: 0.25rem;
  left: 0;
  width: 100%;
- height: 70%;
+ height: 72%;
  clip-path: polygon(5% 5%, 20% 5%, 25% 15%, 75% 15%, 80% 5%, 95% 5%, 95% 75%, 85% 75%, 75% 85%, 30% 85%, 20% 75%, 5% 75%);
 }
  
@@ -204,18 +204,18 @@
   content: '';
   position: absolute;
   background: #4b8aa6;
-  opacity: 0.9;
-  left: 2.25rem;
-  right: 2.25rem;
-  bottom: 2rem;
+  opacity: 0.8;
   top: .5rem;
+  bottom: 1rem;
+  right: 2.2rem;
+  left: 2.2rem;
   z-index: -1;
   clip-path: polygon(0 0, 100% 0, 90% 15%, 10% 15%);
-  border-top: double 2px blue;
+  border-top: double 4px #2847d3;
 }
 .card-name h2 {
   display: inline-block;
-margin-top: .75rem;
+  margin-top: .85rem;
   font-size: 0.7rem;
   text-transform: uppercase; /* Capitalize talvez */
 }
@@ -223,28 +223,27 @@ margin-top: .75rem;
 .card-description {
   position: relative;
   z-index: 2;
-  padding: 0 3rem 1.25rem 1.25rem;
   text-align: start;
   font-size: .6rem;
-  height: 5.75rem;
+  height: 5.9rem;
   width: 95%;
   right: 0.25rem;
   color: rgb(3, 19, 3);
   font-weight: 600;
+  padding: 0 3rem 1.25rem 1.25rem;
 }
 /* DESCRIPTION BACKGROUND */
 .card-description::before {
   content: '';
   position: absolute;
-  background: #dec1b5; /* var*/
-  opacity: 0.75;
-  /* width: 80%; */
   left: .75rem;
-  right: .75rem;
-  height: 100%;
+  right: 0.75rem;
+  top: -.58rem;
   bottom: .5rem;
   z-index: -1;
-  border-bottom: double 2px blue;/* var*/
+  background: #dec1b5;
+  opacity: 0.75;
+  border-bottom: solid 3px #4b89a5;/* var*/
 }
 
 .card-values {
@@ -255,19 +254,17 @@ margin-top: .75rem;
 }
 .card-number {
   position: absolute;
-  right: 8rem;
-  left: 0.5rem;
-  bottom: 6.55rem;
-  height: 1.5rem;
-
+  right: 7.75rem;
+  left: 0.4rem;
+  bottom: 6.35rem;
+  height: 1.65rem;
   display: flex;
   justify-content: start;
   align-items: center;
   font-size: .75rem;
   font-weight: 800;
-  
-  clip-path: polygon(0 0, 50% 0, 95% 100%, 0% 100%);
-  border-top: double 2px blue;/* var*/
+  clip-path: polygon(0 0, 60% 0, 100% 100%, 0% 100%);
+  border-top: double 2px #2847d3;
 }
 /* NUMBER BACKGROUND */
 .card-number::before {
@@ -276,23 +273,22 @@ margin-top: .75rem;
   width: 100%;
   height: 100%;
   background-color: #4b8aa6;
-  opacity: 0.9;
-  /* clip-path: polygon(0 0, 65% 0, 100% 100%, 0% 100%); */
+  opacity: 0.8;
   z-index: -1;
-  border-left: double 2px blue;/* var*/
+  border-left: double 2px #2847d3;/* var*/
 }
 .card-number span {
-  padding: .5rem .25rem;
+  padding: .5rem .5rem;
 }
 
 .card-stacks {
   position: absolute;
-  right: .5rem;
-  bottom: .35rem;
+  right: .45rem;
+  bottom: .45rem;
   left: 3.75rem;
-  height: 7.6rem;
-  border-right: solid 2px blue;
-  clip-path: polygon(85% 0, 100% 0, 100% 100%, 80% 100%, 65% 20%);
+  height: 7.5rem;
+  clip-path: polygon(80% 0, 100% 0, 100% 100%, 75% 100%, 65% 15%);
+  border-right: solid 2px #2847d3;
 }
 .card-stacks::before {
   content: '';
@@ -302,7 +298,7 @@ margin-top: .75rem;
   background-color: #4b8aa6;
   opacity: 0.9;
   z-index: -1;
-  border: double 2px blue;/* var*/
+  border: double 2px #2847d3;/* var*/
 }
 .card-stacks ul {
   list-style: none;
@@ -314,8 +310,8 @@ margin-top: .75rem;
 .card-frame{
   content: '';
   position: absolute;
-  inset: .25rem;
+  inset: .5rem .25rem .4rem;
   border: double 4px #2744cc;
-  border-radius: .25rem;
+  border-radius: .2rem;
 }
 </style>
